@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patent Recommendation System</title><br>
+    <h1 style="text-align: center">Patent Recommendation System</h1>
+</head>
+<body bgcolor="black" style="color: white; text-align: center" >
+<form action="/getRecommendations" method="post">
+    <div>
+        <h2>
+        Enter keywords for patent recommendations : <input type="text" name="input" required/> <br><br>
+        Search by :<select name="searchBy">
+  <option value="Title">Title</option>
+  <option value="Inventors">Author</option>
+  <option value="Assignee">Assignee</option>
+</select> <br><br>
+        <input type="radio" name="noOfRows" value="5" required><label for="5">Get Best 5</label>
+            <input type="radio" name="noOfRows" value="10" required><label for="10">Get Best 10</label>
+            <br><br>
+        </h2>
+        <input type="submit" value="Get Recommendations" />
+    </div>
+</form>
+
+</body>
+</html>
